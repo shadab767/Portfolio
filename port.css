@@ -1,0 +1,610 @@
+html,body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+}
+
+.container{
+    position: relative;
+}
+
+.navBar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    color: white;
+    height: 10vh;
+    width: 100%;
+    z-index: 2;
+    /* border-bottom: white 2px solid; */
+}
+
+.navBar nav{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.circle-image{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+.heading{
+    padding: 10px;
+    width: 35%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.dot{
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.name{
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+}
+
+.sideLinks > ul > li {
+    font-size: 1rem;
+    list-style-type: none;
+    display: inline-block;
+    padding: 15px 40px;
+    font-weight: 600;
+}
+
+
+.list-none{
+    padding: 10px;
+}
+.list-none > li{
+    list-style-type: none;
+    padding: 5px 5px;
+}
+
+
+
+.links{
+    color: white;
+    text-decoration: none;
+}
+
+.links:hover{
+    color: rgb(141, 141, 141);
+    text-decoration: none;
+}
+
+.home{
+    /* margin-top: 10vh; */
+    background: linear-gradient(to top,rgba(245,245,245,0.6),rgba(245,245,245,0.1)),url(assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh);
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+
+.home > div {
+    /* padding: 50px; */
+    /* backdrop-filter: blur(7px); */
+    height: auto;
+    width: 60%;
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 20%;
+    /* border-radius: 20px; */
+    /* box-shadow: 0px 0px 9px #888888; */
+}
+
+.home h1{
+    font-size: 5rem;
+    letter-spacing: 3px;
+}
+
+.intro{
+    max-width: 58rem;
+    margin: -1rem auto 0 auto;
+    font-size: 1.6rem;
+}
+
+.connects{
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    top: 45vh;
+    background: black;
+    box-shadow: 0px 0px 9px #2c2c2c;
+    border-radius: 0 10px 10px 0 ;
+}
+
+.icons{
+    width: 35px;
+    height: 35px;
+    /* border : black 1px solid; */
+    border-radius: 2px;
+
+}
+
+.list-none > li:hover{
+    /* border : white 1px solid; */
+    background-color: #6a3333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.about{
+    /* position: relative; */
+    background-color: rgb(226, 226, 226);
+    padding: 7vh 12vw ;
+}
+
+.about-header{
+    margin: 0;
+    padding: 2.5rem 0 0 0;
+    font-size: 3rem;
+    letter-spacing: 3px ;
+}
+
+.about-header-2{
+    font-size: 2rem;
+    letter-spacing: 1px ;
+} 
+
+.divider {
+    margin-top: 10px;
+    /* content: ''; */
+    position: relative;
+    /* top: calc(100% + -8rem); */
+    height: 5px;
+    width: 3rem;
+    background: #6a3333;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.about-text{
+    padding-top: 15px;
+    margin-left: 12.5vw;
+    font-size: 1.3rem;
+    width: 50vw;
+}
+
+.about-text-2{
+    font-size: 1.3rem;
+    text-align: left;
+    color: gray;
+}
+
+.about-info{
+    width: 100%;
+    text-align: center;
+}
+
+.about-info-2{
+    padding: 0 0 60px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    /* justify-content: space; */
+}
+
+.button-primary{
+    font-size: 1rem;
+    font-weight: 600;
+    background: #6a3333;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 3px black
+}
+
+.button-primary:hover{
+    cursor: pointer;
+}
+
+.bold-info{
+    font-weight: bold;
+    color: rgb(90, 90, 90);
+}
+
+.text-start{
+    text-align: left;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.pl-5{
+    padding-left: 5rem;
+}
+
+.skills-set{
+    width: 100%;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;   
+}
+
+.skill-name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0 0 5px 10px;
+}
+
+.progress-bar{
+    /* display: flex; */
+    /* padding: 0px 5px; */
+    width: 100%;
+    background-color: #000000;
+    border-radius: 100px;
+    /* width: 500px; */
+    height: 31px;
+    /* /* align-items: center; */
+}
+
+.progress-value{
+    box-shadow: 0px -2px 9px -2px #b50707;
+    border-radius: 100px;
+    background: #6a3333;
+    height: 30px;
+    width: 0;
+}
+
+
+.prog-60{    animation: load60 4s normal forwards;}
+.prog-80{    animation: load80 4s normal forwards;}
+.prog-50{    animation: load50 4s normal forwards;}
+.prog-90{    animation: load90 4s normal forwards;}
+.prog-70{    animation: load70 4s normal forwards;}
+/* .prog-60{} */
+
+
+@keyframes load60 {
+    0% { width: 0; }
+    100% { width: 60%; }
+}
+
+@keyframes load90 {
+    0% { width: 0; }
+    100% { width: 90%; }
+}
+
+@keyframes load50 {
+    0% { width: 0; }
+    100% { width: 50%; }
+}
+
+@keyframes load80 {
+    0% { width: 0; }
+    100% { width: 80%; }
+}
+
+@keyframes load70 {
+    0% { width: 0; }
+    100% { width: 70%; }
+}
+
+.projects{
+    /* position: relative; */
+    background-color: #fafafa;
+    padding: 7vh 12vw ;
+}
+
+.contacts{
+    /* position: relative; */
+    background-color: black;
+    padding: 7vh 12vw ;
+    color: white;
+}
+
+.form-style{
+    position: relative;
+    left: 21%;
+    width: 40vw;
+    /* height: 45vh; */
+    background: white;
+    box-shadow: 2px 2px 10px white;
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+.form-label{
+    font-size: 1.2rem;
+    color: rgb(109, 109, 109);
+    font-weight: 600;
+    padding: 5px;
+}
+
+.name-field{
+    width: 97%;
+    height: 50px;
+    border: none;
+    background-color: rgb(226, 226, 226);
+    border-radius: 5px; 
+    margin-bottom: 10px;
+    color: rgb(109, 109, 109);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 5px 15px;
+}
+
+.name-field::placeholder{
+    color: rgb(165, 165, 165);
+    font-size: 1rem;
+    font-weight: 600;   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.message-field{
+    width: 97%;
+    height: 20vh;
+    border: none;
+    background-color: rgb(226, 226, 226);
+    border-radius: 5px; 
+    margin-bottom: 10px;
+    color: rgb(109, 109, 109);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 10px;
+}
+
+.message-field::placeholder{
+    color: rgb(165, 165, 165);
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;   
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    padding: 12vh 11vw 0 26vh;
+    background: black;
+    color: white;
+}
+
+.vertical-list{
+    /* display: flex !important; */
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.vertical-list > li{
+    padding: 5px 5px;
+}
+
+.vertical-list > li:hover{
+    /* border : white 1px solid; */
+    background-color: #6a3333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-2{
+    background: black;
+    height: auto;
+    width: 100%;
+}
+
+.copyright{
+    color: white;
+    padding: 5vh 40vw;
+    font-size: small;
+}
+
+.about-info-3{
+    padding-bottom:5vh ;
+    width: 30vw;
+}
+
+@media only screen and (max-width: 75em)
+{
+html {
+    font-size: 69%;
+}
+}
+
+@media only screen and (max-width: 56.25em)
+{
+    
+    html {
+        font-size: 50%;
+    }
+
+    .container{
+        position: absolute;
+    }
+
+    .connects{
+        display: none;
+    }
+
+    .sideLinks{
+        display: none;
+    }
+
+    .heading{
+        width: 70%;
+        padding: 5px;
+    }
+
+    .navBar{
+        height: 6vh !important;
+    }
+
+
+    .about-info-2{
+        padding: 0 0 60px 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap:4rem;
+    }
+
+    .name{
+        padding: 5px 10px;
+        font-size: 3rem;
+    }
+    
+    .home{
+        height: 60vh;
+    }
+
+    .home > div{
+        top: 26%;
+        left: 11%;
+        width: 75%;
+    }
+
+    .home h1{
+        font-size: 4rem;
+    }
+
+    .intro{
+        font-size: 2.5rem;
+    }
+
+    .about{
+        padding: 0px 3vw;
+    }
+
+    .about-header{
+        font-size: 4rem;
+    }
+
+    .about-text {
+        margin: 0 0 0 5px;
+        font-size: 2.5rem;
+        width: 100vw;
+    }
+
+    .about-header-2{
+        font-size: 3rem;
+    }
+
+    .about-text-2{
+        font-size: 2.5rem;
+    }
+    
+    .button-primary{
+        font-size: 2rem;
+        padding: 10px 20px;
+    }
+    .pl-5{
+        padding-left: 0;
+    }
+
+    .skill-name{
+        font-size: 2.5rem;
+    }
+
+    .skills-set {
+        width: 92%;
+        padding: 15px;
+    }
+
+    .progress-bar {
+        width: 100%;
+        background-color: #000000;
+        border-radius: 100px;
+        height: 25px;
+    }
+
+    .progress-value{
+        height: 25px;
+    }
+
+    .projects{
+        padding: 0 0;
+    }
+
+    .contacts{
+        padding: 0 0 5vh 0;
+    }
+
+    .form-style {
+        position: relative;
+        left: 4%;
+        width: 90vw;
+        height: auto;
+        background: white;
+        box-shadow: none;
+        border-radius: 5px;
+        padding: 1rem 2rem;
+    }
+
+    .form-label{
+        font-size: 2rem;
+    }
+
+    .name-field{
+        font-size: 2rem;
+        width: 94%;
+        padding: 5px 10px;
+        height: 40px;
+    }
+
+    .name-field::placeholder{
+        font-size: 2rem;
+    }
+
+    .message-field{
+        font-size: 2rem;
+        width: 94%;
+    }
+
+    .message-field::placeholder{
+        font-size: 2rem;
+    }
+
+    .footer{
+        display: block;
+        padding: 25px 15px;
+    }
+
+    .about-text-3{
+        font-size: 2rem;
+    }
+
+    .vertical-list > ul > li {
+        font-size: 1rem;
+    }
+
+    .about-info-3{
+        padding-bottom:5vh ;
+        width: 100%;
+    }
+
+    .copyright{
+        padding: 5vh 20vw
+    }
+}
+
+
+
+
+@media only screen and (max-width: 56.25em){
+.home-hero__socials {
+    display: none;
+}}
