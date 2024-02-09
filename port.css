@@ -187,7 +187,7 @@ html,body{
 .about-text-2{
     font-size: 1.3rem;
     text-align: left;
-    color: gray;
+    color: #585858;
 }
 
 .about-info{
@@ -495,7 +495,7 @@ html {
 
     .about-text {
         margin: 0 0 0 5px;
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         width: 100vw;
     }
 
