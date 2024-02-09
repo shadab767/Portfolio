@@ -16,7 +16,11 @@ html,body{
     height: 10vh;
     width: 100%;
     z-index: 2;
-    /* border-bottom: white 2px solid; */
+}
+
+.navBar-Black{
+    background-color: black !important;
+    border-bottom: white 2px solid !important;
 }
 
 .navBar nav{
@@ -418,6 +422,53 @@ html,body{
     width: 30vw;
 }
 
+.ham-menu{
+    display: none;
+}
+
+
+.menu-icon{
+    width: 30px;
+    padding: 10px;
+}
+
+.xmark-icon{
+    width: 30px;
+    padding: 10px;
+}
+
+.d-none{
+    display: none;
+}
+
+.menu-links{
+    position: absolute;
+    top: 101%;
+    text-align: right;
+    width: 100%;
+    right: 0;
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+.active{
+    opacity: 1;
+}
+
+.menu-links > ul {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-links > ul > li {
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 19px 23px;
+    background: black;
+    border-bottom: white 1px solid;
+}
+
+
 @media only screen and (max-width: 75em)
 {
 html {
@@ -427,6 +478,10 @@ html {
 
 @media only screen and (max-width: 56.25em)
 {
+
+    .ham-menu{
+        display: block;
+    }
     
     html {
         font-size: 50%;
